@@ -1,0 +1,10 @@
+#business-property-parent-div {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  border: 1px solid green;
+
+  height: 780px;
+
+}

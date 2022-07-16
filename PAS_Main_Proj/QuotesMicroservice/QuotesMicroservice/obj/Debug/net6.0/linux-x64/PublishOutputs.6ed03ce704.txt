@@ -1,0 +1,17 @@
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\QuotesMicroservice
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\appsettings.Development.json
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\appsettings.json
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\QuotesMicroservice.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\QuotesMicroservice.deps.json
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\QuotesMicroservice.runtimeconfig.json
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\QuotesMicroservice.pdb
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\System.Web.Cors.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\System.Net.Http.Formatting.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\System.Web.Http.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\System.Web.Http.Cors.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\Microsoft.OpenApi.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\Newtonsoft.Json.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\Newtonsoft.Json.Bson.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\final1.0\PolicyAdministrationSystemMFPE-master\QuotesMicroservice\QuotesMicroservice\bin\Debug\net6.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qnZmiH77r5sD34qt/iyJNnhhJhv5u52ScqLYcJqudWI=",
+  "Source": "policymicroservice",
+  "BasePath": "_content/policymicroservice",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,81 @@
+#login-parent-div {
+  border: 1px solid blue;
+
+  /* background-image: url("../../assets/sea-edge-79ab30e2.png"); */
+  /* background-image: url("../../assets/photo-1579546929518-9e396f3cc809.jpeg"); */
+  background-image: url("../../assets/bgpic.jpg");
+  /* background-image: url("../../assets//1567666.webp"); */
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  /* justify-content: center; */
+
+  /* border: 1px solid red; */
+
+  height: 80vh;
+}
+
+#welcome-header-div {
+  /* border: 1px solid black; */
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 40vh;
+}
+
+#policy-admin-text {
+  font-family: monospace;
+  font-style: italic;
+  font-size: 50px;
+  color: white;
+  margin: 5px;
+
+  font-weight: bold;
+
+  /* color: whitesmoke; */
+}
+
+.header-div {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  /* border: 1px solid orangered; */
+}
+
+#login-form-fields {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+h4{
+  color: white;
+ }
+
+ header{
+  height: 80px;
+  background-color: #ffffff;
+}

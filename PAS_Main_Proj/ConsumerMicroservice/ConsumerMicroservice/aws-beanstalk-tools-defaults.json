@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-2",
+    "configuration" : "Debug",
+    "framework"     : "net6.0",
+    "self-contained" : false,
+    "application"    : "ConsumerMicroservice",
+    "environment"    : "ConsumerMicroservice-test",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-0ac4f804ec95833bd\";\"aws:ec2:vpc,Subnets\"=\"subnet-05b2cbcb06550988b\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.3.3 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "consumermicroservice-test",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "demokey",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "apismapleapplication-RecipeBeanstalkServiceRole62B-HCQVI8R0ZOFL",
+    "proxy-server"         : "nginx"
+}

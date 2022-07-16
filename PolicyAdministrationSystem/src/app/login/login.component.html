@@ -1,0 +1,39 @@
+
+
+<div id="login-parent-div">
+  <div id="welcome-header-div">
+    <!-- <h3 id="welcome-text">WELCOME</h3> -->
+    <br>
+    <h3 id="policy-admin-text">POLICY ADMINISTRATION SYSTEM</h3>
+  </div>
+
+  <form id="login-form" [formGroup]="this.formGroup">
+    <mat-card>
+
+      <div class="header-div">
+        <h3>AGENT LOGIN</h3>
+      </div>
+      <div class="imgcontainer">
+        <img src="https://th.bing.com/th/id/OIP.JwEJgEC-hx43MR-2OJa_IQHaHw?pid=ImgDet&rs=1" alt="Avatar" class="avatar">
+      </div>
+
+      <mat-card-content>
+        <div id="login-form-fields">
+
+          <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input type="text" matInput formControlName="userName">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input type="password" matInput formControlName="password">
+          </mat-form-field>
+
+          <button mat-flat-button color="primary" (click)="this.login()">Login</button>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
+</div>

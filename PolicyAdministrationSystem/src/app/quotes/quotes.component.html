@@ -1,0 +1,23 @@
+<form [formGroup]="this.formGroup" id="quotes-form">
+
+  <div class="header-div">
+    <h3>Get Quotes for your Policy</h3>
+  </div>
+
+  <mat-form-field>
+    <mat-label>Buisness Value</mat-label>
+    <input type="number" matInput formControlName="businessValue">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Property Value</mat-label>
+    <input type="number" matInput formControlName="propertyValue">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Property Type</mat-label>
+    <input type="text" matInput formControlName="propertyType">
+  </mat-form-field>
+
+  <button type="button" mat-flat-button color="primary" (click)="this.getQuotes()">Get Quotes</button>
+</form>

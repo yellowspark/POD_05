@@ -1,0 +1,54 @@
+<form [formGroup]="this.formGroup" id="business-property-form">
+
+  <mat-form-field>
+    <mat-label>Business ID</mat-label>
+    <input type="number" matInput formControlName="id">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Consumer ID</mat-label>
+    <input type="number" matInput formControlName="consumerID">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Building Type</mat-label>
+    <input type="text" matInput formControlName="buildingType">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Storeys</mat-label>
+    <input type="number" matInput formControlName="storeys">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Age</mat-label>
+    <input type="number" matInput formControlName="age">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Square Feet</mat-label>
+    <input type="number" matInput formControlName="squareFeet">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Cost of Asset</mat-label>
+    <input type="number" matInput formControlName="costOfAsset">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Salvage Value</mat-label>
+    <input type="number" matInput formControlName="salvageValue">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Useful Life of Asset</mat-label>
+    <input type="number" matInput formControlName="usefulLifeOfAsset">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Property Type</mat-label>
+    <input type="text" matInput formControlName="propertyType">
+  </mat-form-field>
+
+  <button type="button" (click)="this.onSubmit()" color="primary" mat-flat-button>Add Property</button>
+</form>

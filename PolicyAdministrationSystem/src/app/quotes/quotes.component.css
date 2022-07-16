@@ -1,0 +1,18 @@
+#quotes-form {
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid red; */
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.header-div {
+  display: flex;
+  justify-content: center;
+
+  /* border: 1px solid orangered; */
+}

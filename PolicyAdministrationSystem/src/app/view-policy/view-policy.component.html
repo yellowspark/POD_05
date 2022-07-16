@@ -1,0 +1,101 @@
+<form [formGroup]="this.formGroup" id="view-policy-details-form">
+
+  <mat-form-field>
+    <mat-label>Policy ID</mat-label>
+    <input type="number" matInput formControlName="policyId">
+  </mat-form-field>
+
+  <button type="button" mat-flat-button color="primary" (click)="this.getPolicyDetails()">View Policy</button>
+</form>
+
+<div *ngIf="this.policyFound" id="policy-details-div">
+
+  <mat-form-field>
+    <mat-label>Policy ID</mat-label>
+    <input type="number" [value]="this.policy?.id" readonly matInput>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Policy Status</mat-label>
+    <input type="text" matInput [value]="this.policy?.acceptedQuotes?.status" readonly>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Quote</mat-label>
+    <input type="number" matInput [value]="this.policy?.acceptedQuotes?.quotes" readonly>
+  </mat-form-field>
+
+  <mat-card>
+    <!-- Consumer Details Header -->
+    <div class="header-div">
+      <mat-card-subtitle>
+        <h3>Consumer Details</h3>
+      </mat-card-subtitle>
+    </div>
+
+    <mat-card-content>
+
+      <div id="policy-consumer-details-div">
+        <mat-form-field>
+          <mat-label>Consumer Name</mat-label>
+          <input type="text" [value]="this.policy?.businessMaster?.consumer?.name" matInput readonly>
+        </mat-form-field>
+
+        <mat-form-field *ngIf="this.policy?.businessMaster?.consumer?.email != ''">
+          <mat-label>Consumer Email</mat-label>
+          <input type="text" [value]="this.policy?.businessMaster?.consumer?.email" matInput readonly>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Consumer PAN</mat-label>
+          <input type="text" [value]="this.policy?.businessMaster?.consumer?.pan" matInput readonly>
+        </mat-form-field>
+
+        <mat-card>
+          <!-- Business Details Header -->
+          <div class="header-div">
+            <mat-card-subtitle>
+              <h3>Business Details</h3>
+            </mat-card-subtitle>
+          </div>
+
+          <mat-card-content>
+
+            <div id="policy-business-details-div">
+
+              <mat-form-field>
+                <mat-label>Business Type</mat-label>
+                <input type="text" [value]="this.policy?.businessMaster?.consumer?.business?.businessType" matInput
+                  readonly>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Capital Invested</mat-label>
+                <input type="number" [value]="this.policy?.businessMaster?.consumer?.business?.capitalInvested" matInput
+                  readonly>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Annual Turnover</mat-label>
+                <input type="number" [value]="this.policy?.businessMaster?.consumer?.business?.annualTurnover" matInput
+                  readonly>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Total Employees</mat-label>
+                <input type="number" [value]="this.policy?.businessMaster?.consumer?.business?.totalEmployees" matInput
+                  readonly>
+              </mat-form-field>
+
+            </div>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+
+    </mat-card-content>
+
+  </mat-card>
+
+  <button type="button" mat-flat-button (click)="this.collapsePolicyDetails()" color="warn">Close</button>
+</div>

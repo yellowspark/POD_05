@@ -1,0 +1,31 @@
+#search-consumer-details-div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#consumer-business-details-div {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+
+#consumer-details-div {
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid black; */
+
+  align-items: center;
+
+}
+
+.header-div {
+  display: flex;
+  /* border: 1px solid red; */
+
+  justify-content: center;
+}

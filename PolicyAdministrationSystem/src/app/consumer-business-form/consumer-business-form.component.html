@@ -1,0 +1,61 @@
+<div id="business-form">
+<form [formGroup]="this.formGroup" id="consumer-business-form">
+  <mat-form-field>
+    <mat-label>Consumer Name</mat-label>
+    <input type="text" matInput formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input type="email" matInput formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>PAN</mat-label>
+    <input type="text" matInput formControlName="pan">
+  </mat-form-field>
+    <!-- <mat-form-field>
+    <mat-label>Date of Birth</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+
+  <mat-card>
+    <mat-card-subtitle>
+      <div class="header-div">
+        <h3>Business Details</h3>
+      </div>
+    </mat-card-subtitle>
+
+    <mat-card-content>
+      <div formGroupName="businessFormGroup" id="consumer-business-form-div">
+
+        <mat-form-field>
+          <mat-label>Business Type</mat-label>
+          <input type="text" matInput formControlName="businessType">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Annual Turnover</mat-label>
+          <input type="number" matInput formControlName="annualTurnover">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Number of Employees</mat-label>
+          <input type="number" matInput formControlName="totalEmployees">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Capital Invested</mat-label>
+          <input type="number" matInput formControlName="capitalInvested">
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+
+  </mat-card>
+
+  <button type="button" (click)="this.onSubmit()" color="primary" mat-flat-button>Add Consumer</button>
+</form>
+</div>

@@ -1,0 +1,38 @@
+#view-policy-details-form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  /* border: 1px solid black; */
+}
+
+#policy-details-div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  /* border: 1px solid red; */
+
+  height: 100%;
+
+  padding: 5px;
+}
+
+#policy-consumer-details-div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  /* border: 1px solid black; */
+}
+
+#policy-business-details-div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  /* border: 1px solid red; */
+}

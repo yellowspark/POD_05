@@ -1,0 +1,13 @@
+<form id="create-policy-form" [formGroup]="this.formGroup">
+  <mat-form-field >
+    <mat-label>Consumer ID</mat-label>
+    <input type="number" matInput formControlName="consumerId">
+  </mat-form-field>
+
+  <mat-form-field >
+    <mat-label>Accepted Quotes</mat-label>
+    <input type="number" matInput formControlName="acceptedQuotes">
+  </mat-form-field>
+
+  <button type="button" mat-flat-button color="primary" (click)="this.createPolicy()">Create Policy</button>
+</form>

@@ -1,0 +1,43 @@
+<mat-toolbar color="cadetblue">
+  <button (click)="this.toggleDrawer()" mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>InsureityPortal</span>
+</mat-toolbar>
+
+<mat-drawer-container>
+  <mat-drawer mode="over" #drawer>
+    <div id="selection-buttons-div">
+      <div class="test-div">
+        <button type="button" mat-flat-button color="primary" routerLink="/consumerBusiness"
+          (click)="this.toggleDrawer()" class="navigation-buttons">Consumer Business</button>
+      </div>
+
+      <div class="test-div">
+        <button type="button" mat-flat-button color="primary" routerLink="/businessProperty"
+          (click)="this.toggleDrawer()" class="navigation-buttons">Business Property</button>
+      </div>
+
+      <div class="test-div">
+        <button type="button" mat-flat-button color="primary" routerLink="/policy" (click)="this.toggleDrawer()"
+          class="navigation-buttons">Policy</button>
+      </div>
+
+      <div class="test-div">
+        <button type="button" mat-flat-button color="primary" routerLink="/quotes" (click)="this.toggleDrawer()"
+          class="navigation-buttons">Quotes</button>
+      </div>
+
+      <div class="test-div">
+        <button type="button" mat-flat-button color="warn" (click)="this.logout()"
+          class="navigation-buttons">Logout</button>
+      </div>
+
+
+    </div>
+  </mat-drawer>
+
+  <div id="router-outlet-div">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>

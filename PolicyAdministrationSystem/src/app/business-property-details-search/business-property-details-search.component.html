@@ -1,0 +1,73 @@
+<form [formGroup]="this.formGroup" id="business-property-details-search-form">
+  <div id="search-business-property-details-div">
+    <mat-form-field>
+      <mat-label>Consumer ID</mat-label>
+      <input type="number" matInput formControlName="consumerId">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Business ID</mat-label>
+      <input type="number" matInput formControlName="businessId">
+    </mat-form-field>
+
+    <button type="button" mat-flat-button color="primary" (click)="this.getBusinessProperty()">Search
+      Consumer</button>
+  </div>
+</form>
+
+<mat-card *ngIf="this.businessPropertyFound">
+  <div id="business-property-details-div">
+    <mat-form-field>
+      <mat-label>Business ID</mat-label>
+      <input type="number" matInput [value]="this.property?.id" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Consumer ID</mat-label>
+      <input type="number" matInput [value]="this.property?.consumerID" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Building Type</mat-label>
+      <input type="text" matInput [value]="this.property?.buildingType" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Storeys</mat-label>
+      <input type="number" matInput [value]="this.property?.storeys" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Age</mat-label>
+      <input type="number" matInput [value]="this.property?.age" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Square Feet</mat-label>
+      <input type="number" matInput [value]="this.property?.squareFeet" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Cost of Asset</mat-label>
+      <input type="number" matInput [value]="this.property?.costOfAsset" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Salvage Value</mat-label>
+      <input type="number" matInput [value]="this.property?.salvageValue" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Useful Life of Asset</mat-label>
+      <input type="number" matInput [value]="this.property?.usefulLifeOfAsset" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Property Type</mat-label>
+      <input type="text" matInput [value]="this.property?.propertyType" readonly>
+    </mat-form-field>
+
+    <!-- Update consumer business button -->
+    <button type="button" mat-flat-button color="primary" (click)="this.updateBusinessProperty()">Update</button>
+    <button type="button" mat-flat-button color="warn" (click)="this.collapseBusinessPropertyDetails()">Close</button>
+  </div>
+</mat-card>
